@@ -3,6 +3,8 @@ BME680 environment multi-sensor MQTT bus producer for ESP32C3
 
 Adafruit driver for their BME680 board supports CircuitPython but CircuitPython isn't on this ESP32C3 board of theirs, just like it isn't on the one from 01space. The BME680 interface uses a few Adafruit libraries and, unsurprisingly, it didn't install or run cleanly in Micropython.  So now trying the @robert-hh library.
 
+Just use https://github.com/robert-hh/BME680-Micropython - it works.
+
 # Hardware
 - Adafruit BME680 - STEMMA QT Temperature, Humidity, Pressure and Gas Sensor https://www.adafruit.com/product/3660
 - Adafruit QT Py ESP32-C3 WiFi Dev Board with STEMMA QT https://www.adafruit.com/product/5405
