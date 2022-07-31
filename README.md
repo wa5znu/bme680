@@ -23,6 +23,12 @@ temp=24.6;hum=64;press=1015
 temp=27.39;hum=52;press=1014.321;gas=8859
 ``` 
 
+- Achieved
+```
+sensor/bme680/QTPY_000000000000 temp=26.61,hum=51.7866,press=1014.259,gas=6233
+sensor/dust/Dust_Wifi_00000000 pm01=1;pm2_5=2;pm10=2;aqi=8;pm2_5raw=2
+sensor/bme280/kuzu_00000000 temp=24.6;hum=65;press=1015
+```
 
 # Drivers
 https://github.com/robert-hh/BME680-Micropython
