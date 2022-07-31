@@ -32,7 +32,7 @@ while True:
     hum = bme.humidity
     press = bme.pressure
     gas = bme.gas
-    MESSAGE = f"temp={temp:.2f},hum={hum:0.},press={press:.3f},gas={gas}"
+    MESSAGE = f"temp={temp:.2f};hum={hum:0.};press={press:.3f};gas={gas}"
     print(f"{TOPIC} {MESSAGE}")
     mqttc.publish(TOPIC, MESSAGE)
     sleep(60)
