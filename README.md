@@ -27,7 +27,8 @@ sensor/bme680/QTPY_000000000000 temp=26.77;hum=52.9152;press=1015.945;gas=18982
 ```
 
 # Drivers
-https://github.com/robert-hh/BME680-Micropython
+- https://github.com/robert-hh/BME680-Micropython
+- import net.py
 - upip.install("umqtt.simple", "lib")
 
 # References
