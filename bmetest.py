@@ -7,8 +7,6 @@ from machine import SoftI2C, Pin
 import time
 bme = BME680_I2C(SoftI2C(scl=Pin(6), sda=Pin(5)))
 
-for _ in range(3):
-    print(bme.temperature, bme.humidity, bme.pressure, bme.gas)
+for _ in range(86400):
+    print(bme.temperature, bme.humidity, bme.pressure * 0.029530) # bme.gas
     time.sleep(1)
-
-
