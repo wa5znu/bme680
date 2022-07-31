@@ -18,3 +18,5 @@ https://github.com/robert-hh/BME680-Micropython
 - https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board
 - https://learn.adafruit.com/micropython-hardware-i2c-devices/i2c-main
 - https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/main/Adafruit%20QT%20Py%20ESP32-C3%20Pinout.pdf
+- https://randomnerdtutorials.com/micropython-mqtt-esp32-esp8266/
+- https://github.com/RuiSantosdotme/ESP-MicroPython/
