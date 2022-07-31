@@ -10,8 +10,23 @@ Just use https://github.com/robert-hh/BME680-Micropython - it works.
 - Adafruit QT Py ESP32-C3 WiFi Dev Board with STEMMA QT https://www.adafruit.com/product/5405
 - STEMMA QT / Qwiic JST SH 4-Pin Cable - 50mm https://www.adafruit.com/product/4399
 
+# MQTT
+
+- Existing traffic
+```
+pm01=2;pm2_5=2;pm10=2;aqi=8;pm2_5raw=0
+temp=24.6;hum=64;press=1015
+```
+
+- Proposed
+```
+temp=27.39;hum=52;press=1014.321;gas=8859
+``` 
+
+
 # Drivers
 https://github.com/robert-hh/BME680-Micropython
+- upip.install("umqtt.simple", "lib")
 
 # References
 - https://microcontrollerslab.com/micropython-bme680-esp32-esp8266-gas-pressure-temperature-humidity/
@@ -19,3 +34,5 @@ https://github.com/robert-hh/BME680-Micropython
 - https://learn.adafruit.com/micropython-hardware-i2c-devices/i2c-main
 - https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/main/Adafruit%20QT%20Py%20ESP32-C3%20Pinout.pdf
 - https://bhave.sh/micropython-mqtt/
+- https://micropython.org/pi/umqtt.simple/umqtt.simple-1.3.4.tar.gz
+
