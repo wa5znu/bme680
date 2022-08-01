@@ -25,7 +25,6 @@ class BME680MQTT(object):
        
     def connect(self):
         mynet.connect()        
-        self.mqttc = MQTTClient(self.CLIENT_NAME, self.broker_addr, keepalive=60)
         self.mqttc.connect()
 
     def disconnect(self):
@@ -62,5 +61,3 @@ def main(broker_addr):
 if __name__ == "__main__":
     import secrets
     main(secrets.BROKER_ADDR)
-
-    
