@@ -39,3 +39,4 @@ sensor/bme680/QTPY_000000000000 temp=26.77;hum=52.9152;press=1015.945;gas=18982
 - https://bhave.sh/micropython-mqtt/
 - https://micropython.org/pi/umqtt.simple/umqtt.simple-1.3.4.tar.gz
 - https://forum.micropython.org/viewtopic.php?t=12109&p=65771#p65868 "OSError: \[Errno 113\] ECONNABORTED"
+- https://www.tomshardware.com/how-to/send-and-receive-data-raspberry-pi-pico-w-mqtt
