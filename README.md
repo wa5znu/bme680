@@ -1,5 +1,7 @@
 # bme680
-MQTT bus producer for Adafruit QtPy ESP32-C3 and Adafruit BME680 sensor 
+## MQTT bus producer for Adafruit QtPy ESP32-C3 and Adafruit BME680 sensor 
+
+![Adafruit BME280 and QTPy](docs/adafruit-bme280-qtpy-small.jpg)
 
 Adafruit driver for their BME680 board supports CircuitPython but CircuitPython isn't on this ESP32C3 board of theirs, just like it isn't on the one from 01space. The BME680 interface uses a few Adafruit libraries and, unsurprisingly, it didn't install or run cleanly in Micropython.  Just use https://github.com/robert-hh/BME680-Micropython port.
 
