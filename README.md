@@ -38,4 +38,4 @@ sensor/bme680/QTPY_000000000000 temp=26.77;hum=52.9152;press=1015.945;gas=18982
 - https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/blob/main/Adafruit%20QT%20Py%20ESP32-C3%20Pinout.pdf
 - https://bhave.sh/micropython-mqtt/
 - https://micropython.org/pi/umqtt.simple/umqtt.simple-1.3.4.tar.gz
-
+- https://forum.micropython.org/viewtopic.php?t=12109&p=65771#p65868 "OSError: \[Errno 113\] ECONNABORTED"
