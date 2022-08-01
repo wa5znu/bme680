@@ -1,5 +1,7 @@
 # bme680
-MQTT bus producer for Adafruit QtPy ESP32-C3 and Adafruit BME680 sensor 
+## MQTT bus producer for Adafruit QtPy ESP32-C3 and Adafruit BME680 sensor 
+
+![Adafruit BME280 and QTPy](docs/adafruit-bme280-qtpy-small.jpg)
 
 Adafruit driver for their BME680 board supports CircuitPython but CircuitPython isn't on this ESP32C3 board of theirs, just like it isn't on the one from 01space. The BME680 interface uses a few Adafruit libraries and, unsurprisingly, it didn't install or run cleanly in Micropython.  Just use https://github.com/robert-hh/BME680-Micropython port.
 
@@ -39,3 +41,4 @@ sensor/bme680/QTPY_000000000000 temp=26.77;hum=52.9152;press=1015.945;gas=18982
 - https://bhave.sh/micropython-mqtt/
 - https://micropython.org/pi/umqtt.simple/umqtt.simple-1.3.4.tar.gz
 - https://forum.micropython.org/viewtopic.php?t=12109&p=65771#p65868 "OSError: \[Errno 113\] ECONNABORTED"
+- https://www.tomshardware.com/how-to/send-and-receive-data-raspberry-pi-pico-w-mqtt
