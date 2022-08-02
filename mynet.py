@@ -7,6 +7,10 @@ import time
 # Test reception e.g. with:
 # mosquitto_sub -t foo_topic
 
+def isconnected():
+    sta_if = network.WLAN(network.STA_IF)
+    return sta_if.isconnected()
+
 def connect():
     from secrets import WIFI_NAME, WIFI_PASS
     sta_if = network.WLAN(network.STA_IF)
