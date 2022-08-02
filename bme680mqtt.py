@@ -25,6 +25,7 @@ class BME680MQTT(object):
        
     def connect(self):
         mynet.connect()        
+        self.mqttc = MQTTClient(self.CLIENT_NAME, self.broker_addr, keepalive=60)
         self.mqttc.connect()
 
     def disconnect(self):
@@ -42,6 +43,8 @@ class BME680MQTT(object):
         MESSAGE = f"temp={temp:.2f};hum={hum:.2f};press={press:.3f};gas={gas}"
         print(f"{self.TOPIC} {MESSAGE}")
         try:
+            if not mynet.isconnected():
+                self.connect()
             self.mqttc.publish(self.TOPIC, MESSAGE)
             #mynet.disconnect() # inject fault
         except OSError as e:
@@ -49,7 +52,6 @@ class BME680MQTT(object):
             print("MQTT Publish failed; reconnecting")
             self.disconnect()
             sleep(10)
-            self.connect()
         else:
             sleep(60)
 
@@ -61,3 +63,5 @@ def main(broker_addr):
 if __name__ == "__main__":
     import secrets
     main(secrets.BROKER_ADDR)
+
+    
